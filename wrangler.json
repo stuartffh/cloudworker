@@ -1,0 +1,30 @@
+{
+  "name": "worker-teste",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "misty-silence-84ed-d1",
+      "database_id": "f8f234f5-48b7-4701-83c4-1dfbb1e4ec63"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "worker-teste-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
